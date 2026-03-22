@@ -1,0 +1,17 @@
+<!--pages/demo/demo.wxml-->
+
+<!-- 调用变量的时候一定加{{}} -->
+<!-- view标签是div -->
+<button type="primary" bindtap="onclick">{{text}}</button>
+<view class="center">{{message}} </view>
+<view wx:if="{{clicked}}" class="center">按钮被点击</view>
+<view>{{info.name}}: {{info.age}}</view>
+<input type="text" placeholder="输入?" class="center"/>
+<block wx:for="{{[1,2,3]}}" wx:key="id"> <!--wx:for-index="i" wx:for-item="num"可选，用于修改循环内的item和index变量名 -->
+  <view>
+  <switch checked="" bindchange=""/>
+  {{item}} - {{index}}
+  <!-- item是当前元素，index是索引 -->
+  </view>
+</block>
+

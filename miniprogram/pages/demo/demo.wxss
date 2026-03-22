@@ -1,0 +1,9 @@
+/* pages/demo/demo.wxss */
+view {
+  text-align: center;
+  color: white;
+}
+.center {
+  text-align: center;
+  color: white;
+}
