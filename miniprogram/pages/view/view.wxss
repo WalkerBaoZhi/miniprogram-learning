@@ -1,0 +1,86 @@
+.section {
+  margin: 20rpx;
+}
+
+.section__title {
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+  color: white;
+}
+
+.flex-wrp {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+/* 背景色 */
+.bc_green {
+  background-color: green;
+}
+
+.bc_red {
+  background-color: red;
+}
+
+.bc_blue {
+  background-color: blue;
+}
+
+.bc_gray {
+  background-color: gray;
+}
+
+/* 滚动视图 */
+.scroll-container {
+  height: 300rpx;
+  border: 1px solid #ccc;
+}
+
+.scroll-view-item {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+.scroll-container-H {
+  width: 100%;
+  white-space: nowrap;
+  border: 1px solid #ccc;
+}
+
+.scroll-view-item_H {
+  display: inline-block;
+  width: 200rpx;
+  height: 200rpx;
+  line-height: 200rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+/* 背景色 */
+.bc_green { background-color: green; }
+.bc_red { background-color: red; }
+.bc_yellow { background-color: yellow; color: #000; }
+.bc_blue { background-color: blue; }
+

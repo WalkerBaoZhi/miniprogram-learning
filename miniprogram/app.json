@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/demo/demo",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/view/view"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -31,7 +32,13 @@
         "iconPath": "images/avatar.png",
         "text": "我的",
         "selectedIconPath": "images/avatar.png"
+      },
+      {
+        "pagePath": "pages/view/view",
+        "iconPath": "images/cat.png",
+        "text": "view组件",
+        "selectedIconPath": "images/cat.png"
       }
     ]
-    }
+  }
 }

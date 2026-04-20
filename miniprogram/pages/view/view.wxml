@@ -1,0 +1,55 @@
+<!-- 基础视图 -->
+<view class="section">
+  <view class="section__title">一行三列布局</view>
+  <view class="flex-wrp">
+    <view class="bc_green flex-grow" hover-class="bc_blue">1</view>
+    <view class="bc_red flex-grow">2</view>
+    <view class="bc_blue flex-grow">3</view>
+  </view>
+</view>
+
+<view class="section">
+  <view class="section__title">左右混合布局</view>
+  <view class="flex-wrp" style="height: 400rpx;">
+    <view class="bc_green" style="width: 200rpx; height:400rpx">1</view>
+    <view class="flex-col flex-grow">
+      <view class="bc_blue" style="height:165rpx">2</view>
+      <view class="flex-row">
+        <view class="bc_red flex-grow">3</view>
+        <view class="bc_gray flex-grow">4</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 滚动视图 -->
+<view class="section">
+  <view class="section__title">vertical scroll</view>
+  <scroll-view class="scroll-container"
+               scroll-y
+               bindscrolltoupper="upper"
+               bindscrolltolower="lower"
+               bindscroll="scroll"
+               scroll-into-view="{{toView}}">
+    <view id="green" class="scroll-view-item bc_green">x</view>
+    <view id="red" class="scroll-view-item bc_red">x</view>
+    <view id="yellow" class="scroll-view-item bc_yellow">x</view>
+    <view id="blue" class="scroll-view-item bc_blue">x</view>
+  </scroll-view>
+</view>
+
+<view class="btn-area">
+  <button size="mini" bindtap="tap">点击滚到底部蓝色区域</button>
+</view>
+
+<view class="section">
+  <view class="section__title">horizontal scroll</view>
+  <scroll-view class="scroll-container-H" scroll-x>
+    <view id="green" class="scroll-view-item_H bc_green">x</view>
+    <view id="red" class="scroll-view-item_H bc_red">x</view>
+    <view id="yellow" class="scroll-view-item_H bc_yellow">x</view>
+    <view id="blue" class="scroll-view-item_H bc_blue">x</view>
+    <view id="red1" class="scroll-view-item_H bc_red">x</view>
+    <view id="green1" class="scroll-view-item_H bc_green">x</view>
+  </scroll-view>
+</view>

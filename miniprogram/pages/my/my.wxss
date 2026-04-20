@@ -1,1 +1,24 @@
 /* pages/my/my.wxss */
+.bg_blue {
+  background-color: blue;
+  height: 40%;
+  width: 30%;
+}
+
+.bg_green {
+  background-color: green;
+  height: 40%;
+  width: 30%;
+}
+
+.bg_red {
+  background-color: red;
+  height: 40%;
+  width: 30%;
+}
+
+.bg_aqua {
+  background-color: aqua;
+  height: 40%;
+  width: 30%;
+}
