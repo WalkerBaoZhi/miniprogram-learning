@@ -1,0 +1,28 @@
+/* pages/elements/elements.wxss */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.25em;
+    color: #333;
+    margin: 10rpx;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+    width: calc(50vw - 20px);
+    height: calc(50vw - 20px);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    line-height: calc(50vw - 20px); 
+}

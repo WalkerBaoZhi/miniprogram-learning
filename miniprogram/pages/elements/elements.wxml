@@ -1,0 +1,15 @@
+<scroll-view scroll-y style="height: 100vh;">
+    <view class="col">
+        <view class="row">
+            <button class="block" bind:tap="SwitchToView" type="primary">
+                view
+            </button>
+            <view style="width: 10px;"></view>
+            <button class="block" bind:tap="SwitchToSwiper" type="primary">
+                swiper
+            </button>
+        </view>
+
+    </view>
+
+</scroll-view>
