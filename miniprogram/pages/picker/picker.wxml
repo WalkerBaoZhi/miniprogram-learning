@@ -1,0 +1,18 @@
+<!--pages/picker/picker.wxml-->
+<view class="container">
+    <picker mode="date" start="1970-01-01" end="9999-12-31" bindchange="ChangeDate">
+        选择一个日期：{{nowdate}}
+    </picker>
+    <picker mode="time" start="00:00" end="23:59" bindchange="ChangeTime">
+        选择一个时间：{{nowtime}}
+    </picker>
+    <picker mode="region" bindchange="ChangeRegion">
+        选择一个地区：{{nowregion}}
+    </picker>
+    <picker mode="selector" bindchange="ChangeSelet" range="{{numberlist}}">
+        选择一个数字：{{number}}
+    </picker>
+    <picker mode="multiSelector" range="{{numberlist2}}" bindchange="ChangeMultiSelet">
+        选择两个数字：{{number2[0]}} {{number2[1]}}
+    </picker>
+</view>

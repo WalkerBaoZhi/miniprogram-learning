@@ -1,0 +1,33 @@
+/* pages/button/button.wxss */
+
+view {
+    margin: 10rpx;
+}
+
+text {
+    font-size: 1.25rem;
+}
+
+button {
+    flex: 1;
+    margin: 10rpx;
+}
+
+.main {
+    margin: 20rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 25rpx;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

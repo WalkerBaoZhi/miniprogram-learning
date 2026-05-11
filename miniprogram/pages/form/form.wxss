@@ -1,0 +1,79 @@
+/* pages/form/form.wxss */
+.container {
+    padding: 30rpx 30rpx;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40rpx;
+}
+
+.form-group {
+    margin-bottom: 30rpx;
+}
+
+.label {
+    display: block;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15rpx;
+}
+
+.input {
+    border: 2rpx solid #ccc;
+    border-radius: 10rpx;
+    padding: 20rpx;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.textarea {
+    border: 2rpx solid #ccc;
+    border-radius: 10rpx;
+    padding: 20rpx;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    height: 160rpx;
+}
+
+.picker-value {
+    border: 2rpx solid #ccc;
+    border-radius: 10rpx;
+    padding: 20rpx;
+    font-size: 1rem;
+    color: #999;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20rpx;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10rpx;
+    font-size: 1rem;
+}
+
+.btn-row {
+    display: flex;
+    gap: 20rpx;
+    margin-top: 40rpx;
+}
+
+.btn-submit {
+    flex: 1;
+    border-radius: 10rpx;
+}
+
+.btn-reset {
+    flex: 1;
+    border-radius: 10rpx;
+    background-color: #ccc;
+    color: #333;
+}

@@ -1,0 +1,34 @@
+<!--pages/image/image.wxml-->
+<scroll-view scroll-y style="height: 100vh;">
+    <view class="h1">图片展示</view>
+
+    <view class="section">
+        <view class="section-title">原图 (mode="scaleToFill")</view>
+        <image class="img-demo" src="{{imgSrc}}" mode="scaleToFill" />
+    </view>
+
+    <view class="section">
+        <view class="section-title">等比缩放完整显示 (mode="aspectFit")</view>
+        <image class="img-demo" src="{{imgSrc}}" mode="aspectFit" />
+    </view>
+
+    <view class="section">
+        <view class="section-title">等比缩放填充裁切 (mode="aspectFill")</view>
+        <image class="img-demo" src="{{imgSrc}}" mode="aspectFill" />
+    </view>
+
+    <view class="section">
+        <view class="section-title">宽度固定等比缩放 (mode="widthFix")</view>
+        <image class="img-demo" src="{{imgSrc}}" mode="widthFix" />
+    </view>
+
+    <view class="section">
+        <view class="section-title">高度固定等比缩放 (mode="heightFix")</view>
+        <image class="img-demo" src="{{imgSrc}}" mode="heightFix" />
+    </view>
+
+    <view class="h1">图片懒加载</view>
+    <view class="section">
+        <image class="img-lazy" src="{{imgSrc}}" lazy-load bindload="onImageLoad" binderror="onImageError" />
+    </view>
+</scroll-view>

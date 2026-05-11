@@ -1,0 +1,12 @@
+<!--pages/textarea/textarea.wxml-->
+<view class="container">
+    <view class="h1">代码提交</view>
+    <view class="row">
+        <button class="orib">返回比赛</button>
+        <button class="blub">提交</button>
+        <button class="greb">提交记录</button>
+    </view>
+    <view class="textarea-container">
+        <textarea class="codearea" placeholder="请输入代码"></textarea>
+    </view>
+</view>

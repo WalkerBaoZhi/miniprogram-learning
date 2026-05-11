@@ -1,0 +1,8 @@
+/* pages/picker/picker.wxss */
+.container {
+    padding: 60rpx 30rpx;
+}
+picker {
+    border: 1rpx solid #000;
+    margin: 10rpx;
+}

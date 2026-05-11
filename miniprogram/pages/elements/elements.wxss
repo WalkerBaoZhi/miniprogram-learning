@@ -3,26 +3,22 @@
 .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
+    gap: 20rpx;
+    margin: 10rpx;
 }
 
 .col {
     display: flex;
     flex-direction: column;
+    margin: 10rpx;
 }
 
 .block {
-    display: inline-block;
-    text-align: center;
-    font-size: 1.25em;
-    color: #333;
+    flex: 1;
+    border-radius: 10rpx;
+}
+
+.h1 {
+    font-size: 2rem;
     margin: 10rpx;
-    margin-left: 10rpx;
-    margin-right: 10rpx;
-    width: calc(50vw - 20px);
-    height: calc(50vw - 20px);
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    line-height: calc(50vw - 20px); 
 }

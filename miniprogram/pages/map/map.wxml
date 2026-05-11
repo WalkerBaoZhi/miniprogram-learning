@@ -1,0 +1,36 @@
+<!--pages/map/map.wxml-->
+<view class="container">
+    <view class="h1">地图展示</view>
+
+    <view class="section">
+        <map
+            class="map-demo"
+            latitude="{{latitude}}"
+            longitude="{{longitude}}"
+            scale="{{scale}}"
+            markers="{{markers}}"
+            controls="{{controls}}"
+            bindmarkertap="onMarkerTap"
+            bindcontroltap="onControlTap"
+            bindtap="onMapTap"
+            bindregionchange="onRegionChange"
+        />
+    </view>
+
+    <view class="ctrl-row">
+        <button class="ctrl-btn" bind:tap="zoomIn">放大</button>
+        <button class="ctrl-btn" bind:tap="zoomOut">缩小</button>
+        <button class="ctrl-btn" bind:tap="moveToLocation">我的位置</button>
+        <button class="ctrl-btn" bind:tap="addMarker">添加标记</button>
+    </view>
+
+    <view class="status" wx:if="{{regionText}}">
+        操作：{{regionText}}
+    </view>
+
+    <view class="info">
+        <text>纬度：{{latitude}}</text>
+        <text>经度：{{longitude}}</text>
+        <text>缩放级别：{{scale}}</text>
+    </view>
+</view>

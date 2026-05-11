@@ -74,5 +74,70 @@ Page({
         wx.navigateTo({
             url: '/pages/swiper/swiper'
         })
-    }
+    },
+    SwitchToButton() {
+        wx.navigateTo({
+            url: '/pages/button/button'
+        })
+    },
+    SwitchToIcon() {
+        wx.navigateTo({
+            url: '/pages/icon/icon'
+        })
+    },
+    SwitchToProgress() {
+        wx.navigateTo({
+            url: '/pages/progress/progress'
+        })
+    },
+    SwitchToRadio() {
+        wx.navigateTo({
+            url: '/pages/radio/radio'
+        })
+    },
+    SwitchToSlider() {
+        wx.navigateTo({
+            url: '/pages/slider/slider'
+        })
+    },
+    SwitchToPicker() {
+        wx.navigateTo({
+            url: '/pages/picker/picker'
+        })
+    },
+    SwitchToInput() {
+        wx.navigateTo({
+            url: '/pages/input/input'
+        })
+    },
+    SwitchToTextarea() {
+        wx.navigateTo({
+            url: '/pages/textarea/textarea'
+        })
+    },
+    SwitchToForm() {
+        wx.navigateTo({
+            url: '/pages/form/form'
+        })
+    },
+    SwitchToImage() {
+        wx.navigateTo({
+            url: '/pages/image/image'
+        })
+    },
+    SwitchToVideo() {
+        wx.navigateTo({
+            url: '/pages/video/video'
+        })
+    },
+    SwitchToMap() {
+        wx.navigateTo({
+            url: '/pages/map/map'
+        })
+    },
+    SwitchToLocation() {
+        wx.navigateTo({
+            url: '/pages/location/location'
+        })
+    },
 })

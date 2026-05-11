@@ -1,0 +1,38 @@
+<!--pages/location/location.wxml-->
+<view class="container">
+    <view class="h1">位置服务</view>
+
+    <view class="btn-group">
+        <button class="btn primary" bind:tap="getLocation">获取当前位置</button>
+        <button class="btn primary" bind:tap="chooseLocation">选择位置</button>
+        <button class="btn primary" bind:tap="openLocation">打开地图导航</button>
+        <button class="btn danger" bind:tap="clearData">清除数据</button>
+    </view>
+
+    <view class="info-card" wx:if="{{latitude && longitude}}">
+        <view class="info-row">
+            <text class="info-label">纬度</text>
+            <text class="info-value">{{latitude}}</text>
+        </view>
+        <view class="info-row">
+            <text class="info-label">经度</text>
+            <text class="info-value">{{longitude}}</text>
+        </view>
+        <view class="info-row" wx:if="{{address}}">
+            <text class="info-label">地址</text>
+            <text class="info-value">{{address}}</text>
+        </view>
+        <view class="info-row" wx:if="{{speed}}">
+            <text class="info-label">速度</text>
+            <text class="info-value">{{speed}} m/s</text>
+        </view>
+        <view class="info-row" wx:if="{{accuracy}}">
+            <text class="info-label">精度</text>
+            <text class="info-value">{{accuracy}} m</text>
+        </view>
+    </view>
+
+    <view class="empty" wx:if="{{!latitude}}">
+        <text>点击上方按钮获取位置信息</text>
+    </view>
+</view>

@@ -1,0 +1,56 @@
+<!--pages/input/input.wxml-->
+<view class="table">
+  <view class="tr th">
+    <view class="td">属性</view>
+    <view class="td">说明</view>
+    <view class="td">可选值 / 示例</view>
+  </view>
+
+  <view class="tr">
+    <view class="td">value</view>
+    <view class="td">输入框的值</view>
+    <view class="td">"abc"</view>
+  </view>
+
+  <view class="tr">
+    <view class="td">placeholder</view>
+    <view class="td">占位文字</view>
+    <view class="td">"请输入内容"</view>
+  </view>
+
+  <view class="tr">
+    <view class="td">type</view>
+    <view class="td">输入类型</view>
+    <view class="td">text / number / digit / idcard / password</view>
+  </view>
+
+  <view class="tr">
+    <view class="td">password</view>
+    <view class="td">是否密码模式</view>
+    <view class="td">true / false</view>
+  </view>
+
+  <view class="tr">
+    <view class="td">maxlength</view>
+    <view class="td">最大长度</view>
+    <view class="td">-1（不限制）或数字</view>
+  </view>
+
+  <view class="tr">
+    <view class="td">focus</view>
+    <view class="td">自动聚焦</view>
+    <view class="td">true / false</view>
+  </view>
+
+  <view class="tr">
+    <view class="td">disabled</view>
+    <view class="td">禁用输入</view>
+    <view class="td">true / false</view>
+  </view>
+
+  <view class="tr">
+    <view class="td">confirm-type</view>
+    <view class="td">键盘右下角按钮文字</view>
+    <view class="td">done / search / next / go / send</view>
+  </view>
+</view>

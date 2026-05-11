@@ -1,0 +1,25 @@
+<!--pages/icon/icon.wxml-->
+<view class="h1">图标大小</view>
+<view class="row">
+    <block wx:for="{{sizelist}}">
+        <icon type="success" size="{{item}}" />
+    </block>
+</view>
+
+<view class="h1">图标颜色</view>
+<view class="row">
+
+    <block wx:for="{{colorlist}}">
+
+        <icon type="success" color="{{item}}" size="40" />
+
+    </block>
+
+</view>
+
+<view class="h1">图标类型</view>
+<view class="row">
+    <block wx:for="{{typelist}}">
+        <icon type="{{item}}" size="40" />
+    </block>
+</view>

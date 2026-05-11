@@ -1,15 +1,45 @@
 <scroll-view scroll-y style="height: 100vh;">
+    <!-- 展示组件 -->
+    <view class="h1">展示组件</view>
     <view class="col">
         <view class="row">
             <button class="block" bind:tap="SwitchToView" type="primary">
                 view
             </button>
-            <view style="width: 10px;"></view>
             <button class="block" bind:tap="SwitchToSwiper" type="primary">
                 swiper
             </button>
         </view>
-
+        <view class="row">
+            <button class="block" type="primary" bind:tap="SwitchToIcon">
+                icon</button>
+            <button class="block" type="primary" bind:tap="SwitchToProgress">进度条</button>
+        </view>
     </view>
-
+    <view class="h1">功能组件</view>
+    <view class="col">
+        <view class="row">
+            <button class="block" bind:tap="SwitchToButton" type="primary">按钮</button>
+            <button class="block" bind:tap="SwitchToRadio" type="primary">单选多选</button>
+        </view>
+        <view class="row">
+            <button class="block" bind:tap="SwitchToSlider" type="primary">slider</button>
+            <button class="block" bind:tap="SwitchToPicker" type="primary">Picker</button>
+        </view>
+        <view class="row">
+            <button class="block" bind:tap="SwitchToInput" type="primary">input</button>
+            <button class="block" bind:tap="SwitchToTextarea" type="primary">textarea</button>
+        </view>
+        <view class="row">
+            <button class="block" bind:tap="SwitchToForm" type="primary">form</button>
+            <button class="block" bind:tap="SwitchToImage" type="primary">image</button>
+        </view>
+        <view class="row">
+            <button class="block" bind:tap="SwitchToVideo" type="primary">video</button>
+            <button class="block" bind:tap="SwitchToMap" type="primary">地图</button>
+        </view>
+        <view class="row">
+            <button class="block" bind:tap="SwitchToLocation" type="primary">位置</button>
+        </view>
+    </view>
 </scroll-view>

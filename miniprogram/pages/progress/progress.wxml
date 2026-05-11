@@ -1,0 +1,7 @@
+<!--pages/progress/progress.wxml-->
+<view class="h1">文件上传页面</view>
+<view class="h1">
+    <button type="primary" bindtap="chooseImage">点击上传文件</button>
+    <progress percent="{{uploadPercent}}" show-info stroke-width="6" activeColor="#07C160" wx:if="{{showProgress}}" />
+    <image src="{{imageUrl}}" mode="aspectFit" wx:if="{{imageUrl}}" />
+</view>

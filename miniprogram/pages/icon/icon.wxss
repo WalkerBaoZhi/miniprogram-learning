@@ -1,0 +1,12 @@
+/* pages/icon/icon.wxss */
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.h1 {
+    font-size: 1.25rem;
+    margin: 10rpx;
+}

@@ -1,0 +1,30 @@
+/* pages/slider/slider.wxss */
+.container {
+  padding: 60rpx 30rpx;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300rpx;
+}
+
+.slider-group {
+  margin-top: 80rpx;
+}
+
+.slider-row {
+  margin-bottom: 40rpx;
+}
+
+.slider-label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 15rpx;
+  color: #333;
+}
+
+.slider-row slider {
+  width: 100%;
+}

@@ -1,0 +1,59 @@
+<!--pages/radio/radio.wxml-->
+<view class="container">
+    <view class="form-group">
+        <text class="label">性别</text>
+        <radio-group bindchange="onGenderChange">
+            <label class="radio-item">
+                <radio value="male" /> 男
+            </label>
+            <label class="radio-item">
+                <radio value="female" /> 女
+            </label>
+        </radio-group>
+    </view>
+
+  <view class="form-group">
+    <text class="label">语言</text>
+    <radio-group bindchange="onLanguageChange">
+      <label class="radio-item">
+        <radio value="chinese" /> 中文
+      </label>
+      <label class="radio-item">
+        <radio value="english" /> 英文
+      </label>
+    </radio-group>
+  </view>
+
+  <view class="form-group">
+    <text class="label">喜欢什么数字</text>
+    <checkbox-group bindchange="onNumbersChange">
+      <label class="checkbox-item">
+        <checkbox value="1" /> 1
+      </label>
+      <label class="checkbox-item">
+        <checkbox value="2" /> 2
+      </label>
+      <label class="checkbox-item">
+        <checkbox value="3" /> 3
+      </label>
+      <label class="checkbox-item">
+        <checkbox value="4" /> 4
+      </label>
+      <label class="checkbox-item">
+        <checkbox value="5" /> 5
+      </label>
+      <label class="checkbox-item">
+        <checkbox value="6" /> 6
+      </label>
+    </checkbox-group>
+  </view>
+
+    <button type="primary" bindtap="submitForm">提交</button>
+
+    <view class="result" wx:if="{{showResult}}">
+        <view class="result-title">填写信息</view>
+        <view class="result-item">性别：{{genderText}}</view>
+    <view class="result-item">语言：{{languageText}}</view>
+    <view class="result-item">喜欢数字：{{numbersText}}</view>
+  </view>
+</view>

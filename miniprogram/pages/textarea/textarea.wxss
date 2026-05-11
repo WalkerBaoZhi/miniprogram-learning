@@ -1,0 +1,38 @@
+.container {
+    padding: 20rpx 0;
+}
+
+.h1 {
+    text-align: center;
+    font-size: larger;
+}
+
+.row {
+    display: inline-block;
+    flex-wrap: nowrap;
+    gap: 10rpx;
+}
+
+button {
+    flex: 1;
+    min-width: 0;
+    color: white;
+    border-radius: 10rpx;
+}
+
+.codearea {
+    border: 5rpx solid black;
+    margin: 15rpx 15rpx 0;
+}
+
+.orib {
+    background-color: chocolate;
+}
+
+.blub {
+    background-color: darkcyan;
+}
+
+.greb {
+    background-color: limegreen;
+}

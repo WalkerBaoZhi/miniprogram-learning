@@ -1,0 +1,49 @@
+<!--pages/video/video.wxml-->
+<view class="container">
+    <view class="h1">视频播放</view>
+
+    <view class="section">
+        <view class="section-title">基础播放</view>
+        <video class="video-demo" src="{{videoSrc}}" controls />
+    </view>
+
+    <view class="section">
+        <view class="section-title">自动播放 + 循环</view>
+        <video class="video-demo" src="{{videoSrc}}" controls autoplay loop />
+    </view>
+
+    <view class="section">
+        <view class="section-title">自定义控件</view>
+        <video
+            class="video-demo"
+            src="{{videoSrc}}"
+            id="myVideo"
+            controls
+            bindplay="onPlay"
+            bindpause="onPause"
+            bindended="onEnded"
+            binderror="onVideoError"
+            objectFit="{{objectFit}}"
+        />
+        <view class="video-ctrl">
+            <button class="ctrl-btn" bind:tap="togglePlay">{{playing ? '暂停' : '播放'}}</button>
+            <button class="ctrl-btn" bind:tap="restart">重新播放</button>
+        </view>
+    </view>
+
+    <view class="section">
+        <view class="section-title">封面图 + 静音播放</view>
+        <video
+            class="video-demo"
+            src="{{videoSrc}}"
+            controls
+            poster="{{posterSrc}}"
+            muted
+            show-center-play-btn="{{showCenterBtn}}"
+        />
+        <view class="video-ctrl">
+            <switch checked="{{showCenterBtn}}" bindchange="onToggleCenterBtn" color="#07C160" />
+            <text class="ctrl-label">显示中央播放按钮</text>
+        </view>
+    </view>
+</view>

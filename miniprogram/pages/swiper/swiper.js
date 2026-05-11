@@ -6,10 +6,10 @@ Page({
      */
     data: {
         imagelist: [
-            "../../images/swiper-0.jpg",
-            "../../images/swiper-1.jpg",
-            "../../images/swiper-2.jpg",
-            "../../images/swiper-3.jpg"
+            "https://chihiro.host/wp-content/uploads/2026/04/swiper-0.jpg",
+            "https://chihiro.host/wp-content/uploads/2026/04/swiper-1.jpg",
+            "https://chihiro.host/wp-content/uploads/2026/04/swiper-2.jpg",
+            "https://chihiro.host/wp-content/uploads/2026/04/swiper-3.jpg"
         ],
         dots: false,
         autoplay: false,
